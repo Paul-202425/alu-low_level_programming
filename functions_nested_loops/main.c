@@ -1,15 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 int main(void)
 {
-int r;
-
-r = _islower('H');
-printf("%d\n", r);
-r = _islower('o');
-printf("%d\n", r);
-r = _islower(108); /* ASCII for 'l' */
-printf("%d\n", r);
-return (0);
+    print_to_98(0);
+    print_to_98(98);
+    print_to_98(111);
+    print_to_98(81);
+    return (0);
 }
