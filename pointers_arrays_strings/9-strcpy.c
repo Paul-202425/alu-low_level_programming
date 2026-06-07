@@ -1,8 +1,7 @@
-#include <stdio.h>
-
+#include <unistd.h>
 /**
- * _strcpy - copies the string pointed to by src, including the terminating null byte,
- *           to the buffer pointed to by dest
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte, to the buffer pointed to by dest
  * @dest: pointer to the destination buffer
  * @src: pointer to the source string
  *
@@ -10,7 +9,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-`int i = 0;
+int i = 0;
 
 while (src[i] != '\0')
 {
