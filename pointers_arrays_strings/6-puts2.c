@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  * puts2 - prints every other character of a string, starting with the first
  * @str: pointer to the string to be printed
@@ -13,9 +13,9 @@ while (str[i] != '\0')
 {
 if (i % 2 == 0)
 {
-putchar(str[i]);
+write(1, &str[i], 1);
 }
 i++;
 }
-putchar('\n');
+write(1, "\n", 1);
 }
