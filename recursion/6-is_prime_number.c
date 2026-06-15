@@ -25,10 +25,10 @@ int is_prime_number(int n)
 
 int help(int n, int try)
 {
-        if (n % try == 0 && try > 1 && try <= (n / 2))
-                return (0);
-        else if (try > n / 2)
-                return (1);
-	   try++;
-        return (help(n, try));
+if (n % try == 0 && try > 1 && try <= (n / 2))
+return (0);
+else if (try > n / 2)
+return (1);
+try++;
+return (help(n, try));
 }

@@ -24,10 +24,10 @@ int _sqrt_recursion(int n)
 
 int _sqrt_help(int n, int try)
 {
-        if (try == (n / 2) + 1 && n != 1)
-                return (-1);
-        else if (try * try == n)
-                return (try);
-        try++;
-	        return (_sqrt_help(n, try));
+if (try == (n / 2) + 1 && n != 1)
+return (-1);
+else if (try * try == n)
+return (try);
+try++;
+return (_sqrt_help(n, try));
 }
